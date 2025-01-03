@@ -2,7 +2,7 @@
 
 **Crafting Simulator** is a web-based application designed to simulate and calculate crafting and brewing algorithms for games. It offers two primary functionalities: **Alchemist Brewing Algorithm** and **Blacksmith Crafting Algorithm**. The project is designed with modern, responsive web technologies and provides an intuitive interface for inputting resources, calculating outputs, and displaying results.
 
---
+
 
 ## Features
 
@@ -19,7 +19,7 @@
   - Clean, user-friendly interface with real-time feedback and dynamic result displays.  
   - Styled with CSS for professional aesthetics, including hover effects and shadowing.
 
---
+
 
 ## Technologies Used
 
@@ -27,7 +27,7 @@
 - **CSS**: For styling and responsive design.  
 - **JavaScript**: For dynamic functionality, including calculations and DOM manipulation.
 
----
+
 
 ## Installation
 
@@ -43,16 +43,17 @@
     ```
     open index.html
     ```
---
+
 
 ## Usage 
   1. **Open the application** in a browser.
   2. **Input your resources** in the respective text areas:
+     
     - **Alchemist Brewing Algorithm**: Paste your alchemical resources.
     - **Blacksmith Crafting Algorithm**: Paste your blacksmith resources.
-  3. **Click the Calculate button** to see the results dynamically generated below.
+  4. **Click the Calculate button** to see the results dynamically generated below.
 
---
+
 
 ## License
 
