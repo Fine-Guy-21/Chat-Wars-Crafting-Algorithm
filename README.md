@@ -17,7 +17,7 @@
 - **Modern UI/UX**:  
   - Responsive design for all screen sizes.  
   - Clean, user-friendly interface with real-time feedback and dynamic result displays.  
-  - Styled with CSS for professional aesthetics, including hover effects and shadowing.
+
 
 
 
@@ -49,8 +49,8 @@
   1. **Open the application** in a browser.
   2. **Input your resources** in the respective text areas:
      
-   - **Alchemist Brewing Algorithm**: Paste your alchemical resources.
-   - **Blacksmith Crafting Algorithm**: Paste your blacksmith resources.
+   -   **Alchemist Brewing Algorithm**: Paste your alchemical resources.
+   -   **Blacksmith Crafting Algorithm**: Paste your blacksmith resources.
      
   4. **Click the Calculate button** to see the results dynamically generated below.
 
