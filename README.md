@@ -33,15 +33,15 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/crafting-simulator.git
+   git clone https://github.com/Fine-Guy-21/Chat-Wars-Crafting-Algorithm.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd crafting-simulator
+    cd Chat-Wars-Crafting-Algorithm
     ```
 3. Open index.html in your preferred web browser:
     ```
-    open index.html
+    open chatwars.html
     ```
 
 
