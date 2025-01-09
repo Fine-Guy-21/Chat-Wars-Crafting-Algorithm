@@ -880,8 +880,6 @@ function bsPopulateCard(data) {
   }
 }
 
-
-
 function parseInventory(inventoryString) {
   const inventoryObject = {};
 

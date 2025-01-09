@@ -165,11 +165,19 @@ section h2 {
   .input-area textarea{
     max-width: 80%;
   }
+  .alchemist,  .blacksmith {
+    width: 90%;
+  }
   .wrapper{
-    max-width: 90%;
+    max-width: 100%;
     flex-direction: column;
     /* justify-content: center; */
     gap: 1rem;
+  }
+
+  .display-area-screen ,.bs-display-area-screen {
+    width: 90%;
+    border: 1px solid #45a049;
   }
     .header {
       width: 100%;
@@ -178,9 +186,8 @@ section h2 {
         text-align: center;
     }
 
-    .navbar ul {
-        flex-direction: column;
-        gap: 0.5rem;
+    .navbar {
+        display: none;
     }
 
     main {
@@ -193,6 +200,10 @@ section h2 {
 
     .input-area textarea {
         height: 80px;
+    }
+
+    .card {
+      width: 90%;
     }
 }
 

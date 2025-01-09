@@ -26,7 +26,10 @@
                 <div class="input-area">
                     <textarea id="alch_res" placeholder="Paste your Alchemist resources"></textarea>
                     <p class="alert-msg"></p>
-                    <button class="cool-button" onclick="main(document.getElementById('alch_res').value)">Calculate</button>
+                    <div class="btns">
+                        <button class="cool-button" onclick="main(document.getElementById('alch_res').value)">Calculate</button>
+                        <button class="cool-button" style="background-color: rgb(164, 21, 21);" onclick="document.getElementById('alch_res').value='';">Clear</button>
+                    </div>
                 </div>
                 <div class="display-area-screen">
                     <!-- Alchemist cards dynamically populate here -->
@@ -40,7 +43,10 @@
                 <div class="input-area">
                     <textarea id="bs_res" placeholder="Paste your Blacksmith resources"></textarea>
                     <p class="alert-msg"></p>
-                    <button class="cool-button" onclick="bsMain(document.getElementById('bs_res').value)">Calculate</button>
+                    <div class="btns">
+                        <button class="cool-button" onclick="bsMain(document.getElementById('bs_res').value)">Calculate</button>
+                        <button class="cool-button" style="background-color: rgb(164, 21, 21);" onclick="document.getElementById('bs_res').value='';">Clear</button>
+                    </div>
                 </div>
                 <div class="bs-display-area-screen">
                     <!-- Blacksmith cards dynamically populate here -->
