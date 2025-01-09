@@ -907,7 +907,7 @@ function main(stockString) {
   }
   if (Object.keys(stock).length === 0) {
     const alertMsg = document.querySelector(".alert-msg");
-    alertMsg.innerText = "Try Pasting alch stock only \n or \n guild alch stock only";
+    alertMsg.innerText = "Try pasting alch stock only \n or \n guild alch stock only";
   }
 
   const result = checkCraftableItems(stock, crafts);
@@ -922,7 +922,7 @@ function bsMain(stockString) {
   }
   if (Object.keys(stock).length === 0) {
     const alertMsg = document.querySelector(".bs-alert-msg");
-    alertMsg.innerText = "Try Pasting alch stock only \n or \n guild alch stock only";
+    alertMsg.innerText = "Try pasting stock message only \n or \n guild stock message only";
   }
 
 

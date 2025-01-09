@@ -104,7 +104,13 @@ section h2 {
 .alert-msg {
     color: red;
     font-size: 0.9rem;
-    height: 1.2rem;
+    /* height: 1.2rem; */
+}
+
+.bs-alert-msg {
+  color: red;
+  font-size: 0.9rem;
+  /* height: 1.2rem; */
 }
 
 /* Display Area */
