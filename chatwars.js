@@ -310,7 +310,7 @@ const crafts = {
     ingredients: {
       "Ephijora": 1,
       "Ilaves": 1,
-      "Macconut": 1,
+      "Maccunut": 1,
       "Yellow Seed": 1,
     },
   },
