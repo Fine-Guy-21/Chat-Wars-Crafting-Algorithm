@@ -1,115 +1,191 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 5% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    min-height: 100vh;    
-    background-color: #f0f4f8;
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e6e6f0;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 300px;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar.mobile {
+  display: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+/* Main action area */
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 60vh;
 }
 
 .search-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
-
-h1 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
+  background: #fff;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 .search-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
-    width: 100%;
-    max-width: 250px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #45a049;
 }
 
 .result {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-align: left;
-    overflow-wrap: break-word;
-    margin-top: 20px;
-    display: none; /* Hidden by default */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: left;
+  overflow-wrap: break-word;
+  margin-top: 20px;
+  display: none; 
 }
 
 .result p {
-    margin: 0;
-    color: #555;
+  margin: 0;
+  color: #555;
 }
 
-
 .card {
-    background: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .card h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #4CAF50;
+  margin: 0;
+  font-size: 18px;
+  color: #4caf50;
 }
 
 .card p {
-    margin: 5px 0 0;
-    color: #555;
+  margin: 5px 0 0;
+  color: #555;
 }
 
 .card ul {
-    list-style: none; /* Remove default bullets */
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
-li {
-    position: relative;
-    padding-left: 20px; /* Space for the custom bullet */
+.card li {
+  position: relative;
+  padding-left: 20px; 
 }
 
-li::before {
-    content: '•'; /* Custom bullet character */
-    position: absolute;
-    left: 0; /* Position it to the left */
-    color: #4CAF50; /* Custom bullet color */
-    font-size: 20px; /* Custom bullet size */
+.card li::before {
+  content: "•"; 
+  position: absolute;
+  left: 0; 
+  color: #4caf50; 
+  font-size: 20px; 
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.footer a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 10px;
+    height: max-content;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .navbar.mobile {
+    display: block;
+  }
 }

@@ -1,73 +1,78 @@
 /* Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e6e6f0;
+  color: #333;
 }
 
 /* Header */
 .header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 300px;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-    margin: 0;
-    font-size: 1.8rem;
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar.mobile {
+  display: none;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Main Sections */
 main {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 section {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
 }
 
 section h2 {
-    margin-top: 0;
-    color: #4CAF50;
+  margin-top: 0;
+  color: #4caf50;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.input-area{
+.input-area {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,36 +80,36 @@ section h2 {
 }
 /* Input Area */
 .input-area textarea {
-    width: 100%;
-    min-height: 200px;
-    max-height: 250px;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    flex-grow: 2;
-    border-radius: 5px;
-    resize: vertical;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  min-height: 200px;
+  max-height: 250px;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  flex-grow: 2;
+  border-radius: 5px;
+  resize: vertical;
+  font-family: Arial, sans-serif;
 }
 
 .input-area .cool-button {
-    padding: 0.6rem 1.2rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .input-area .cool-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .alert-msg {
-    color: red;
-    font-size: 0.9rem;
-    /* height: 1.2rem; */
+  color: red;
+  font-size: 0.9rem;
+  /* height: 1.2rem; */
 }
 
 .bs-alert-msg {
@@ -150,67 +155,72 @@ section h2 {
 
 /* Footer */
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
 }
 
 .footer a {
-    color: #4CAF50;
-    text-decoration: none;
+  color: #4caf50;
+  text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .input-area textarea{
+  .input-area textarea {
     max-width: 80%;
   }
-  .alchemist,  .blacksmith {
+  .alchemist,
+  .blacksmith {
     width: 90%;
   }
-  .wrapper{
+  .wrapper {
     max-width: 100%;
     flex-direction: column;
     /* justify-content: center; */
     gap: 1rem;
   }
 
-  .display-area-screen ,.bs-display-area-screen {
+  .display-area-screen,
+  .bs-display-area-screen {
     width: 90%;
     border: 1px solid #45a049;
   }
-    .header {
-      width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-    }
+  .header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 10px;
+    height: max-content;
+  }
 
-    .navbar {
-        display: none;
-    }
+  .navbar {
+    display: none;
+  }
+  .navbar.mobile {
+    display: block;
+  }
+  main {
+    padding: 1rem;
+  }
 
-    main {
-        padding: 1rem;
-    }
+  section {
+    padding: 1rem;
+  }
 
-    section {
-        padding: 1rem;
-    }
+  .input-area textarea {
+    height: 80px;
+  }
 
-    .input-area textarea {
-        height: 80px;
-    }
-
-    .card {
-      width: 90%;
-    }
+  .card {
+    width: 90%;
+  }
 }
 
 /* General Card Styles */
@@ -248,7 +258,7 @@ section h2 {
 
 .card-energy {
   font-size: 1rem;
-  color: #007BFF;
+  color: #007bff;
   font-weight: bold;
 }
 
@@ -305,7 +315,7 @@ section h2 {
 
 .card-energy {
   font-size: 1rem;
-  color: #007BFF;
+  color: #007bff;
   font-weight: bold;
 }
 
@@ -323,7 +333,7 @@ section h2 {
 }
 
 .ingredient-name {
-  font-weight:100 ;
+  font-weight: 100;
 }
 
 .ingredient-amount {
